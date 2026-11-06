@@ -1,13 +1,569 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portafolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alann Oswaldo | MI portafolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+
+<body>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#proyectos">My projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Contact me</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="hero" id="inicio">
+
+        <!-- Nombre superior izquierdo -->
+        <div class="hero-name">
+            <h1>Alann Oswaldo</h1>
+        </div>
+
+        <!-- Tres columnas principales -->
+        <div class="hero-grid">
+
+            <!-- IZQUIERDA: FOTO -->
+            <div class="hero-left">
+                <img src="src/assets/Alann_Oswaldo.jpg" alt="Mi fotografía">
+            </div>
+
+            <!-- CENTRO: PRESENTACIÓN -->
+            <div class="hero-center">
+                <span class="hero-tag">BIENVENIDO A MI PORTAFOLIO</span>
+
+                <h2>Hola, soy Alann!</h2>
+
+                <p>
+                    Soy desarrollador web apasionado por la tecnología,
+                    el diseño y la creación de experiencias digitales.
+                </p>
+
+                <p>
+                    Me gusta aprender nuevas tecnologías y transformar
+                    ideas en proyectos funcionales.
+                </p>
+            </div>
+
+            <!-- DERECHA: TECNOLOGÍAS -->
+            <div class="hero-right">
+                <h3>Mis tecnologías</h3>
+
+                <div class="tech-item d-flex align-items-center gap-2">
+                    <i class="bi bi-filetype-html text-danger fs-4"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="tech-item d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-css"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V0zM4.59 7.498q-.908 0-1.455.508-.547.507-.547 1.484v3.106q0 .986.527 1.484t1.406.498q.576 0 1.016-.224.45-.225.703-.674.255-.45.254-1.114v-.185h-1.22v.176q0 .449-.186.683t-.527.235q-.372-.01-.557-.264-.186-.255-.186-.752V9.686q0-.547.166-.811.177-.264.577-.264.321 0 .517.225.195.224.195.693v.205h1.23V9.52q0-.674-.243-1.124a1.55 1.55 0 0 0-.664-.673q-.42-.225-1.006-.225m4.214-.01q-.586 0-1.006.244a1.67 1.67 0 0 0-.635.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.304.42.967.732l.469.215q.44.186.625.43.186.244.186.635 0 .478-.166.703-.157.224-.528.224-.36 0-.547-.244-.185-.243-.205-.752H6.87q.02.996.498 1.524.479.527 1.387.527t1.416-.518.508-1.484q0-.81-.332-1.289-.333-.479-1.045-.79l-.45-.196q-.39-.166-.556-.381-.165-.214-.166-.576 0-.4.166-.596.175-.195.508-.195.36 0 .508.234.156.234.175.703h1.123q-.03-.976-.498-1.484-.468-.518-1.308-.518m4.057 0q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518" />
+                    </svg>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="tech-item d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-javascript" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM9.053 7.596v3.127l-.007 1.752q0 .498-.186.752t-.556.263q-.342 0-.528-.234-.185-.234-.185-.684v-.175H6.37v.185q0 .665.253 1.113.255.45.703.674.44.225 1.016.225.88 0 1.406-.498.527-.498.527-1.485l.007-1.752V7.596zm3.808-.108q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518" />
+                    </svg>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="tech-item d-flex align-items-center gap-2">
+                    <i class="bi bi-git text-danger fs-4"></i>
+                    <span>Git</span>
+                </div>
+
+                <div class="tech-item d-flex align-items-center gap-2">
+                    <i class="bi bi-github text-dark fs-4"></i>
+                    <span>GitHub</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Nombre profesional inferior derecho -->
+        <div class="hero-footer">
+            <p>Desarrollador web Full Stack</p>
+            <a href="/contacto.html">Contáctame</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <i class="bi bi-arrow-down"></i>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT ME -->
+
+    <section class="about-me" id="aboutme">
+        <h2>
+
+        </h2>
+
+        <!-- ENCABEZADO -->
+        <div class="about-header">
+            <span>01 / ABOUT ME</span>
+            <div class="about-line"></div>
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="about-container">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="about-description">
+
+                <h2>
+                    Más que escribir código,
+                    me gusta construir
+                    <span>ideas.</span>
+                </h2>
+
+                <p>
+                    Soy Alann Oswaldo, un desarrollador web
+                    apasionado por la tecnología, el diseño
+                    y la creación de experiencias digitales.
+                </p>
+
+                <p>
+                    Me interesa descubrir nuevas tecnologías,
+                    resolver problemas y transformar ideas
+                    en proyectos funcionales.
+                </p>
+
+                <a href="#proyectos" class="about-link">
+                    Conoce mi trabajo →
+                </a>
+
+            </div>
+
+
+            <!-- COLUMNA DERECHA: TERMINAL -->
+            <div class="about-terminal">
+
+                <div class="terminal-header">
+
+                    <div class="terminal-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span>about_me.exe</span>
+
+                </div>
+
+                <div class="terminal-content">
+
+                    <p class="terminal-command">
+                        <span>$</span> whoami
+                    </p>
+
+                    <p class="terminal-response">
+                        Alann Oswaldo
+                    </p>
+
+
+                    <p class="terminal-command">
+                        <span>$</span> occupation
+                    </p>
+
+                    <p class="terminal-response">
+                        Full Stack Developer
+                    </p>
+
+
+                    <p class="terminal-command">
+                        <span>$</span> interests
+                    </p>
+
+                    <ul>
+                        <li>Web Development</li>
+                        <li>UI / UX Design</li>
+                        <li>Technology</li>
+                        <li>Creative Coding</li>
+                    </ul>
+
+
+                    <p class="terminal-command">
+                        <span>$</span> mindset
+                    </p>
+
+                    <p class="terminal-highlight">
+                        Always learning.<br>
+                        Always building.
+                    </p>
+
+                    <p class="terminal-cursor">_</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PILARES PERSONALES -->
+        <div class="about-values">
+
+            <div class="value-item">
+
+                <span class="value-number">01</span>
+
+                <h3>Creatividad</h3>
+
+                <p>
+                    Buscar nuevas formas de resolver
+                    problemas y expresar ideas.
+                </p>
+
+            </div>
+
+
+            <div class="value-item">
+
+                <span class="value-number">02</span>
+
+                <h3>Aprendizaje</h3>
+
+                <p>
+                    Mantenerme en constante evolución
+                    y descubrir nuevas posibilidades.
+                </p>
+
+            </div>
+
+
+            <div class="value-item">
+
+                <span class="value-number">03</span>
+
+                <h3>Innovación</h3>
+
+                <p>
+                    Transformar ideas en soluciones
+                    digitales funcionales.
+                </p>
+
+            </div>
+
+        </div>
+
+        <section class="skills-section" id="skills">
+
+            <div class="section-heading">
+                <span class="section-number">02 /</span>
+                <h2>SKILLS <span>& EXPERTISE</span></h2>
+                <p>Las herramientas y habilidades que utilizo para transformar ideas en soluciones.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- FRONTEND -->
+                <article class="skill-card">
+                    <span class="card-number">01</span>
+                    <h3>Frontend</h3>
+                    <p class="card-description">Construcción de interfaces web.</p>
+
+                    <div class="technology-list">
+                        <div class="technology">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                        </div>
+
+                        <div class="technology">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                        </div>
+
+                        <div class="technology">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="technology">
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BACKEND -->
+                <article class="skill-card">
+                    <span class="card-number">02</span>
+                    <h3>Backend</h3>
+                    <p class="card-description">Gestión de datos y programación.</p>
+
+                    <div class="technology-list">
+                        <div class="technology">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+
+                        <div class="technology">
+                            <i class="devicon-java-plain colored"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TOOLS -->
+                <article class="skill-card">
+                    <span class="card-number">03</span>
+                    <h3>Tools & Workflow</h3>
+                    <p class="card-description">Herramientas para desarrollar y diseñar.</p>
+
+                    <div class="technology-list">
+                        <div class="technology">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+
+                        <div class="technology">
+                            <i class="devicon-github-original"></i>
+                            <span>GitHub</span>
+                        </div>
+
+                        <div class="technology">
+                            <i class="devicon-vscode-plain colored"></i>
+                            <span>VS Code</span>
+                        </div>
+
+                        <div class="technology">
+                            <i class="devicon-figma-plain colored"></i>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- OTHER SKILLS -->
+                <article class="skill-card">
+                    <span class="card-number">04</span>
+                    <h3>Other Skills</h3>
+                    <p class="card-description">Habilidades que complementan mi desarrollo.</p>
+
+                    <div class="soft-skills">
+                        <span>Responsive Design</span>
+                        <span>UI/UX Design</span>
+                        <span>Problem Solving</span>
+                        <span>Teamwork</span>
+                        <span>Continuous Learning</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </section>
+
+    <section id="proyectos">
+
+        <section class="projects-section" id="projects">
+
+            <div class="section-heading">
+                <span>03 / MY WORK</span>
+                <h2>My Projects</h2>
+                <p>Ideas that become digital experiences.</p>
+            </div>
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+
+                <div class="carousel-inner">
+
+                    <!-- PROYECTO 1 -->
+                    <div class="carousel-item active">
+                        <div class="project-card">
+
+                            <div class="project-gallery">
+                                <img src="src/assets/Ritmo-principal.png" alt="Vista principal del proyecto">
+                                <div class="project-thumbnails">
+                                    <img src="src/assets/Ritmo-content.png" alt="Segunda vista">
+                                    <img src="src/assets/Ritmo-carrito.png" alt="Tercera vista">
+                                </div>
+                            </div>
+
+                            <div class="project-info">
+                                <span>PROJECT 01</span>
+                                <h3>Ritmo | Landing Page </h3>
+
+                                <p>
+                                    Como parte de un hackaton organizado por Generation México, se realizo una landing
+                                    page
+                                    deportiva con un carrito de compras, utilizando HTML, CSS y JavaScript.
+                                </p>
+
+                                <div class="project-technologies">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <a href="https://github.com/Rulox710/generation-hackaton-1.git" target="_blank">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- PROYECTO 2 -->
+                    <div class="carousel-item">
+                        <div class="project-card">
+
+                            <div class="project-gallery">
+                                <img src="src/assets/Apex-inicio.png" alt="Vista principal del proyecto">
+                                <div class="project-thumbnails">
+                                    <img src="src/assets/Apex-categorias.png" alt="Segunda vista">
+                                    <img src="src/assets/Apex-aboutus.png" alt="Tercera vista">
+                                </div>
+                            </div>
+
+                            <div class="project-info">
+                                <span>PROJECT 02</span>
+                                <h3>Apex - Iron </h3>
+
+                                <p>
+                                    Desarrollo de aplicacion web, en conjunto con un grupo multidiciplinario, donde se
+                                    trabajo bajo la metodologia SCRUM
+                                    y con tecnologias como HTML, CSS, BoostStrap y JavaScript con futuras
+                                    implementaciones de MySQL y JAVA.
+                                </p>
+
+                                <div class="project-technologies">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Java</span>
+                                </div>
+
+                                <a href="https://github.com/JesusPeralta0/Apex-Iron.git" target="_blank">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- PRÓXIMAMENTE -->
+                    <div class="carousel-item">
+                        <div class="coming-soon">
+                            <span class="project-number">03</span>
+                            <h3>MORE PROJECTS</h3>
+                            <p>Something new is coming...</p>
+                            <span class="coming-label">TO BE CONTINUED</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CONTROLES -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="contact-section" id="contact">
+
+        <div class="contact-heading">
+            <span>04 / CONTACT</span>
+
+            <h2>¿Hablamos de tu próximo proyecto?</h2>
+
+            <p>
+                ¿Tienes una idea, una propuesta o simplemente quieres
+                conectar? Me encantará saber de ti.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <a href="mailto:tu-oswaldobm50@gmail.com" class="contact-card">
+                <i class="bi bi-envelope"></i>
+                <h3>Email</h3>
+                <p>Escríbeme</p>
+            </a>
+
+            <a href="https://github.com/Dev-Alann-Oswaldo" target="_blank" class="contact-card">
+                <i class="bi bi-github"></i>
+                <h3>GitHub</h3>
+                <p>Conoce mis proyectos</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/dev-alann-oswaldo/" target="_blank" rel="noopener noreferrer"
+                class="contact-card">
+                <i class="bi bi-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>Conectemos profesionalmente</p>
+
+            </a>
+
+            <a href="https://wa.me/5571285342" target="_blank" class="contact-card">
+                <i class="bi bi-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p>Hablemos directamente</p>
+            </a>
+
+        </div>
+
+        <div class="contact-footer">
+            <p>© 2026 Alann Oswaldo | Desarrollador Web</p>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
